@@ -12,7 +12,7 @@ export const privateChatTemplate = (context, data) => html`
                     <p class="field">
                         <label for="description">Room Url - give this to your friend</label>
                         <span class="input">
-                            <input type="text" name="username" id="image" .value="${location.href}" disabled>
+                            <input type="text" name="username" id="image" .value="${location.href}" readonly>
                         </span>
                     </p>
                     <input class="button submit" type="submit" value="Delete room" id="delete"
