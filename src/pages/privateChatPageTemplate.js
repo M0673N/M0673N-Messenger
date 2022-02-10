@@ -10,15 +10,15 @@ export const privateChatTemplate = (context, data) => html`
                 <fieldset>
                     <legend>Private chat room</legend>
                     <p class="field">
-                        <label for="description">Room Url - give this to your friend</label>
+                        <label for="url">Room Url - give this to your friend</label>
                         <span class="input">
-                            <input type="text" name="username" id="image" .value="${location.href}" readonly>
+                            <input type="text" name="url" id="image" .value="${location.href}" readonly>
                         </span>
                     </p>
                     <input class="button submit" type="submit" value="Delete room" id="delete"
                            @click="${event => deleteHandler(event, context)}">
                     <p class="field">
-                        <label for="description">Chat</label>
+                        <label for="chatBox">Chat</label>
                         <span class="input">
                             <textarea name="chatBox" id="chatBox" disabled rows="10">${data}</textarea>
                         </span>
@@ -26,13 +26,13 @@ export const privateChatTemplate = (context, data) => html`
                     <input class="button submit" type="submit" value="Refresh message box" id="refresh"
                            @click="${event => refreshHandler(event, context, 'private')}">
                     <p class="field">
-                        <label for="image">Fake username (mandatory field)</label>
+                        <label for="username">Fake username (mandatory field)</label>
                         <span class="input">
-                            <input type="text" name="username" id="image">
+                            <input type="text" name="username" id="username">
                         </span>
                     </p>
                     <p class="field">
-                        <label for="description">Message (mandatory field)</label>
+                        <label for="message">Message (mandatory field)</label>
                         <span class="input">
                             <textarea name="message" id="message"></textarea>
                         </span>

@@ -16,15 +16,6 @@ html, body {
     overflow-x: hidden;
 }
 
-.basic {
-    background: linear-gradient(rgba(250, 248, 248, 0.2), rgba(25, 167, 173, 0.2));
-    background-size: cover;
-    height: 85vh;
-    position: relative;
-    overflow: hidden;
-}
-
-
 #container {
     width: 100%;
     margin: 0 auto;
@@ -34,13 +25,7 @@ html, body {
     padding: 0;
 }
 
-#site-content > section.basic {
-    text-align: center;
-}
-
-.login form,
-.register form,
-.create form, .edit form {
+.create form {
     margin-top: 5rem;
     margin-bottom: 5rem;
     margin-left: 22%;
@@ -59,8 +44,6 @@ html, body {
     font-size: 1rem;
     cursor: pointer;
     text-align: center;
-    margin-bottom: 10px;
-    margin: 5px;
 }
 
 a {
@@ -70,10 +53,6 @@ a {
 
 li {
     list-style-type: none;
-}
-
-.fa-heart {
-    color: red;
 }
 
 .img {
@@ -99,20 +78,13 @@ img {
     padding-top: 100%;
 }
 
-.detailsOtherBooks,
-.detailsMyBooks,
-.deleteBook,
-.otherBooks,
-.myBooks {
+.item {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.detailsMyBooks > p:nth-child(2),
-.deleteBook > p:nth-child(2),
-.otherBooks > p:nth-child(2),
-.myBooks > p:nth-child(2) {
+.item > p:nth-child(2) {
     color: black;
     font-size: 1.2rem;
     font-weight: bold;
@@ -132,8 +104,6 @@ img {
     justify-content: center;
 }
 
-.basic h1,
-.my-books h1,
 .dashboard h1 {
     text-align: center;
     margin: 0rem;
@@ -163,23 +133,10 @@ div.actions a {
     height: 25px;
 }
 
-.deleteBook > form,
-.detailsMyBooks > form {
-    display: flex;
-    flex-direction: column;
-    padding-bottom: 1rem;
-}
-
-.my-books .my-books-list,
-.dashboard .other-books-list {
+.dashboard .list {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-}
-
-.detailsMyBooks textarea,
-.my-books textarea {
-    margin-bottom: 2rem;
 }
 
 footer {
@@ -195,18 +152,12 @@ footer p {
     color: white;
 }
 
-.no-books {
-    font-weight: bold;
-    font-size: large;
-    text-align: center;
-}
-
 textarea#description {
     height: 100px;
     resize: none;
 }
 
-.otherBooks {
+.item {
     border-radius: 10px;
     text-align: center;
     margin: 2rem;
@@ -218,27 +169,6 @@ textarea#description {
     align-items: center;
 }
 
-
-.otherBooks:hover {
+.item:hover {
     box-shadow: 30px 30px 100px 10px #000000;
-}
-
-.details > .book-information > .img {
-    width: 60%;
-    align-items: center;
-}
-
-.details > .book-information > .button {
-    width: 30%;
-    text-align: center;
-}
-
-.details {
-    margin: 30px;
-}
-
-.likes {
-    font-size: 20px;
-    text-shadow: 4px 4px 8px blue;
-    text-align: center;
 }

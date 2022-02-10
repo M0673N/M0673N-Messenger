@@ -10,7 +10,7 @@ export const publicChatTemplate = (data) => html`
                 <fieldset>
                     <legend>Public chat room</legend>
                     <p class="field">
-                        <label for="description">Chat</label>
+                        <label for="chatBox">Chat</label>
                         <span class="input">
                             <textarea name="chatBox" id="chatBox" disabled rows="10">${data}</textarea>
                         </span>
@@ -18,13 +18,13 @@ export const publicChatTemplate = (data) => html`
                     <input class="button submit" type="submit" value="Refresh message box" id="refresh"
                            @click="${refreshHandler}">
                     <p class="field">
-                        <label for="image">Fake username (mandatory field)</label>
+                        <label for="username">Fake username (mandatory field)</label>
                         <span class="input">
                             <input type="text" name="username" id="image">
                         </span>
                     </p>
                     <p class="field">
-                        <label for="description">Message (mandatory field)</label>
+                        <label for="message">Message (mandatory field)</label>
                         <span class="input">
                             <textarea name="message" id="message"></textarea>
                         </span>

@@ -13,13 +13,13 @@ export const homePageTemplate = (context) => html`
     <main id="site-content">
         <section id="dashboard-page" class="dashboard">
             <h1>Anonymous Messenger</h1>
-            <ul class="other-books-list">
-                <a class="otherBooks" href="/public">
+            <ul class="list">
+                <a class="item" href="/public">
                     <h3>Join the public chat room</h3>
                     <p>Everyone can see the messages in this room.</p>
                 </a>
 
-                <a class="otherBooks" href="" @click="${event => createHandler(event, context)}">
+                <a class="item" href="" @click="${event => createHandler(event, context)}">
                     <h3>Create a private chat room</h3>
                     <p>Create a private room and share the room code.</p>
                 </a>
